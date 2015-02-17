@@ -1,0 +1,441 @@
+
+
+table.artikel_liste td, table.mahn_liste td
+{
+  padding: 3px 2px 3px 2px;
+  font-size: 10px;
+  border-right: 1px solid #C0C0C0;
+  border-bottom: 1px solid #C0C0C0;
+  text-align: center;
+}
+
+table.artikel_liste td.invisible, table.mahn_liste td.invisible
+{
+  border-bottom: none;
+  border-right: none;
+}
+
+table.artikel_liste tr.heading td, table.mahn_liste tr.heading td
+{
+  background-color: #AAAAAA;
+  text-align: center;
+  font-weight: bold;
+  padding: 2px 3px 2px 3px;
+}
+
+table.artikel_liste tr.n td
+{
+  background-color: #FFFFFF;
+}
+
+table.artikel_liste tr.h td
+{
+}
+
+.n, .n_hl, .n_sel
+{
+  background-color: #FFFFFF;
+  color: black;
+  font-weight: normal;
+}
+.h, .h_hl, .h_sel
+{
+  background-color: #F0F0F0;
+  color: black;
+  font-weight: normal;
+}
+
+.n_hl, .h_hl
+{
+  background-color: #CCCCCC;
+  cursor: pointer;
+}
+
+.n_sel, .h_sel
+{
+  background-color: #c1b5de;
+}
+
+
+.unassigned_div {
+border: double;
+	height: 160;
+	overflow: auto;
+}
+.divisions_only {
+border: double;
+	height: 180;
+	overflow: auto;
+}
+.divisions_left {
+border: double;
+	height: 220;
+	overflow: auto;
+}
+.divisions_right {
+border: double;
+	height: 570;
+	overflow: auto;
+}
+
+#content {
+ font-family: verdana, arial, helvetica, sans-serif;
+}
+#main_pane {
+ font-family: verdana, arial, helvetica, sans-serif;	
+}
+
+body {
+ margin: 0px;
+ padding: 0px;
+ background-color: #fff;
+ color: black;		
+}
+
+#copyright {
+	padding-left: 10px;
+	font-size: 0.6em;
+		padding-bottom: 5px;	
+}
+
+p.legend {
+
+	font-size: 0.6em;
+		
+}
+
+#login_pane {
+	z-index: 10;
+	position: absolute;	
+	top: 5px;
+	right: 5px;
+	font-size: 0.7em;
+
+    text-align: right;	
+}
+
+
+
+.submit {
+
+ 	font-size: 0.8em	
+}
+
+.textfield {
+	 	font-size: 0.8em
+}
+
+#header_pane {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: #0af;
+ 		
+}
+#header_pane table {
+	border-spacing: 0px 0px;
+	background-color: #5df;
+}
+
+
+
+#header_pane h1 {
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-right: 20px;
+	padding-left: 10px;
+ 	font-size: 1.4em;		
+}
+
+/* requires hacks */
+td.head_menu {
+	font-size: 0.8em;
+    text-align: right;
+    ve\rtical-align: bottom;
+	pa\dding-bottom: 5px; 
+	pa\dding-right: 5px;  
+	position: relative;
+	bottom: -15px;
+	right: 5px;
+}
+
+
+
+td.trophy_list {
+
+padding: 4px 4px 4px 4px;
+}
+
+#active_tourn {
+	 font-weight: bold;
+}
+
+#main_pane {
+
+ position: absolute;
+ top: 90px;
+ left: 20px;
+ right: 10px;
+ font-size: 1.0em;
+		
+}
+
+
+
+#division_main_pane {
+
+ position: absolute;
+
+  top: 80px; 
+ left: 50px;
+ right: 10px;
+ font-size: 0.8em;
+		
+}
+
+#form_main_pane {
+ position: absolute;
+
+  top: 180px; 
+ left: 50px;
+ right: 10px;
+ font-size: 0.8em;
+}
+
+
+
+.red_draw {
+float:left;
+background-color: #f20;
+width:15px;
+padding-left: 2px;
+}
+
+.blue_draw {
+padding-top: 2px;
+width:35px;
+padding-left: 2px;
+float:left;
+background-color: #0af;
+}
+
+.round1, .round2, .round3, .round4, .round5, .round6, .round7, .round8, .round9, .round10, .round11, .round12, .round13, .round14, .round15, .round16, .round17, .round18, .round19, .round20, .round21, .round22, .round23, .round24, .round25, .round26, .round27, .round28, .round29, .round30, .round31, .round32, .draw_results {
+ background-color: #fff;
+ position: relative;
+ width: 200px;
+ font-size: 1.0em;
+ padding-left: 0px;
+}
+
+.draw_results { 
+ width: 190px;
+}
+
+table.round {
+background-color: #ccc; width: 100%; border-collapse: collapse; height: 100%; border-width: 2px;
+ font-size: 1.0em;
+}
+
+table.round_3rd3rd {
+background-color: #fff; width: 100%; border-collapse: collapse; height: 100%; border-width: 2px;
+ font-size: 1.0em;
+  display: none;
+}
+
+input.division_draw_name {
+ font-size: 0.6em;
+}
+
+td.division_bye_round_number {
+
+ text-align: left;
+ border-width: 0px;
+ width: 20px;
+}
+
+
+
+.draw_title_block {
+	 position: absolute;
+	 top: 0px;
+	 left: 750px;
+	font-size: 1.1em;
+}
+
+.form_title_block {
+	 position: absolute;
+	 top: -90px;
+	 left: 840px;
+	font-size: 1.2em;
+}
+
+.loser_round101, .loser_round102, .loser_round103, .loser_round104, .loser_round105, .loser_round106, .loser_round107, .loser_round108 {
+ background-color: #fff;
+ position: relative;
+ width: 200px;
+ font-size: 1.0em;
+ padding-left: 0px;
+}
+
+
+
+
+
+td.selected {
+	background: #f55;
+}
+
+td.notselected {
+	background: lightblue;
+}
+
+div.caption {
+	font-size: small;
+        margin: 0px 5px 0px 5px;
+}
+
+
+
+
+h1 {
+	
+ font-size:1.1em;
+}
+
+h2 {
+ color: #000;
+ font-size:1.0em;
+}
+
+
+th {
+ padding: 5px 5px 5px 5px;
+}
+
+img {
+ border: 0px;
+}
+
+#main_pane table {
+	font-size: 0.9em;
+}
+
+table {
+	border-spacing: 4px 0px;
+	background-color: #eee;
+
+}
+table.registration {
+	border-spacing: 0px 0px;	
+	padding: 20px 20px 20px 20px;
+}
+
+
+table.enrolment {
+	border-spacing: 20px 0px;
+	background-color: #fff;	
+}
+
+td.enrolment {
+
+	width: 200px;
+
+}
+
+/* Commands and error messages */
+
+#primary_success {
+ background: #7f7;
+}
+#primary_error {
+ background: #f77;
+}
+#primary_warning {
+ background: #ff7;
+}
+#command {
+ background: #aaf;	
+}
+
+/* hyperlinks */
+
+a {
+ text-decoration:none;
+}
+
+a:link {
+ color:#a00;
+}
+
+a:visited {
+ color:#a00;	
+}
+
+a:hover { 
+ color: #a00;
+ background-color: #fff;
+ text-decoration: none;
+}
+
+ul{
+padding:0;
+margin:0;
+padding-top: 10px;
+}
+
+.draw_instruction {
+ color:#aaa; text-align:right;
+}
+
+@media print {
+
+
+	#main_pane {
+	 position: relative;
+	 top: 20px;
+ left: 20px;
+ font-size: 1.0em; 
+	}
+
+.draw_title_block {
+	 position: absolute;
+	 top: -80px;
+	 left: 840px;
+	font-size: 1.2em;
+}
+
+	ul.page_break {
+	 page-break-before: always;
+	}
+	
+	
+	  #header_pane h1 {
+    font-size: 1.0em  !important;
+     }
+     
+#header_pane {
+	background-color: white;
+ 		
+}
+#header_pane table {
+
+	background-color: white;
+}     
+
+td.head_menu {
+	display: none;
+}
+	
+	#login_pane {
+		display: none;
+	}
+	
+.draw_title_buttons {display: none;}
+
+#content { width: x600px; }
+	
+	
+}
+
+

@@ -1,0 +1,149 @@
+<?php /* Smarty version 2.6.20, created on 2009-10-25 14:38:27
+         compiled from admin_champion.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('function', 'config_load', 'admin_champion.tpl', 1, false),array('modifier', 'date_format', 'admin_champion.tpl', 6, false),)), $this); ?>
+<?php echo smarty_function_config_load(array('file' => "test.conf",'section' => 'setup'), $this);?>
+
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "header.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+
+<div id="main_pane">
+
+<h1><?php echo $this->_tpl_vars['active_tournament']['NAME']; ?>
+: <?php echo ((is_array($_tmp=$this->_tpl_vars['active_tournament']['DATE_FROM'])) ? $this->_run_mod_handler('date_format', true, $_tmp, $this->_tpl_vars['date']) : smarty_modifier_date_format($_tmp, $this->_tpl_vars['date'])); ?>
+<?php if ($this->_tpl_vars['active_tournament']['DATE_TO'] != $this->_tpl_vars['active_tournament']['DATE_FROM']): ?> - <?php echo ((is_array($_tmp=$this->_tpl_vars['active_tournament']['DATE_TO'])) ? $this->_run_mod_handler('date_format', true, $_tmp, $this->_tpl_vars['date']) : smarty_modifier_date_format($_tmp, $this->_tpl_vars['date'])); ?>
+<?php endif; ?> : Overall Champion - <?php echo $this->_tpl_vars['GENDER']; ?>
+</h1>
+
+
+<form action="<?php echo $this->_tpl_vars['SCRIPT_NAME']; ?>
+?GENDER=<?php echo $this->_tpl_vars['GENDER']; ?>
+" method="post" enctype="multipart/form-data">
+<input type="submit" value="Submit" name="Submit">
+
+<table border="1" class="champion">
+  <tr>
+     <th>Name</th>
+      <th>Gender</th> 
+      <th>Age</th>  
+   		<?php unset($this->_sections['event']);
+$this->_sections['event']['name'] = 'event';
+$this->_sections['event']['loop'] = is_array($_loop=$this->_tpl_vars['event_names']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['event']['show'] = true;
+$this->_sections['event']['max'] = $this->_sections['event']['loop'];
+$this->_sections['event']['step'] = 1;
+$this->_sections['event']['start'] = $this->_sections['event']['step'] > 0 ? 0 : $this->_sections['event']['loop']-1;
+if ($this->_sections['event']['show']) {
+    $this->_sections['event']['total'] = $this->_sections['event']['loop'];
+    if ($this->_sections['event']['total'] == 0)
+        $this->_sections['event']['show'] = false;
+} else
+    $this->_sections['event']['total'] = 0;
+if ($this->_sections['event']['show']):
+
+            for ($this->_sections['event']['index'] = $this->_sections['event']['start'], $this->_sections['event']['iteration'] = 1;
+                 $this->_sections['event']['iteration'] <= $this->_sections['event']['total'];
+                 $this->_sections['event']['index'] += $this->_sections['event']['step'], $this->_sections['event']['iteration']++):
+$this->_sections['event']['rownum'] = $this->_sections['event']['iteration'];
+$this->_sections['event']['index_prev'] = $this->_sections['event']['index'] - $this->_sections['event']['step'];
+$this->_sections['event']['index_next'] = $this->_sections['event']['index'] + $this->_sections['event']['step'];
+$this->_sections['event']['first']      = ($this->_sections['event']['iteration'] == 1);
+$this->_sections['event']['last']       = ($this->_sections['event']['iteration'] == $this->_sections['event']['total']);
+?>
+        	<th><?php echo $this->_tpl_vars['event_names'][$this->_sections['event']['index']]; ?>
+</th>
+ 		<?php endfor; endif; ?>	 	    
+     <th>Total Points</th>
+     <th>Place</th>
+     <th>Description</th>
+	
+	
+  </tr>
+		 
+ 	<?php unset($this->_sections['competitor']);
+$this->_sections['competitor']['name'] = 'competitor';
+$this->_sections['competitor']['loop'] = is_array($_loop=$this->_tpl_vars['champs_list']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['competitor']['show'] = true;
+$this->_sections['competitor']['max'] = $this->_sections['competitor']['loop'];
+$this->_sections['competitor']['step'] = 1;
+$this->_sections['competitor']['start'] = $this->_sections['competitor']['step'] > 0 ? 0 : $this->_sections['competitor']['loop']-1;
+if ($this->_sections['competitor']['show']) {
+    $this->_sections['competitor']['total'] = $this->_sections['competitor']['loop'];
+    if ($this->_sections['competitor']['total'] == 0)
+        $this->_sections['competitor']['show'] = false;
+} else
+    $this->_sections['competitor']['total'] = 0;
+if ($this->_sections['competitor']['show']):
+
+            for ($this->_sections['competitor']['index'] = $this->_sections['competitor']['start'], $this->_sections['competitor']['iteration'] = 1;
+                 $this->_sections['competitor']['iteration'] <= $this->_sections['competitor']['total'];
+                 $this->_sections['competitor']['index'] += $this->_sections['competitor']['step'], $this->_sections['competitor']['iteration']++):
+$this->_sections['competitor']['rownum'] = $this->_sections['competitor']['iteration'];
+$this->_sections['competitor']['index_prev'] = $this->_sections['competitor']['index'] - $this->_sections['competitor']['step'];
+$this->_sections['competitor']['index_next'] = $this->_sections['competitor']['index'] + $this->_sections['competitor']['step'];
+$this->_sections['competitor']['first']      = ($this->_sections['competitor']['iteration'] == 1);
+$this->_sections['competitor']['last']       = ($this->_sections['competitor']['iteration'] == $this->_sections['competitor']['total']);
+?>
+      <tr>
+ 		<td><?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]['NAME']; ?>
+</td>
+ 		<td><?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]['GENDER']; ?>
+</td> 		
+ 		<td><?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]['AGE']; ?>
+</td> 	 		
+       <?php unset($this->_sections['event']);
+$this->_sections['event']['name'] = 'event';
+$this->_sections['event']['loop'] = is_array($_loop=$this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['event']['max'] = (int)$this->_tpl_vars['event_count'];
+$this->_sections['event']['show'] = true;
+if ($this->_sections['event']['max'] < 0)
+    $this->_sections['event']['max'] = $this->_sections['event']['loop'];
+$this->_sections['event']['step'] = 1;
+$this->_sections['event']['start'] = $this->_sections['event']['step'] > 0 ? 0 : $this->_sections['event']['loop']-1;
+if ($this->_sections['event']['show']) {
+    $this->_sections['event']['total'] = min(ceil(($this->_sections['event']['step'] > 0 ? $this->_sections['event']['loop'] - $this->_sections['event']['start'] : $this->_sections['event']['start']+1)/abs($this->_sections['event']['step'])), $this->_sections['event']['max']);
+    if ($this->_sections['event']['total'] == 0)
+        $this->_sections['event']['show'] = false;
+} else
+    $this->_sections['event']['total'] = 0;
+if ($this->_sections['event']['show']):
+
+            for ($this->_sections['event']['index'] = $this->_sections['event']['start'], $this->_sections['event']['iteration'] = 1;
+                 $this->_sections['event']['iteration'] <= $this->_sections['event']['total'];
+                 $this->_sections['event']['index'] += $this->_sections['event']['step'], $this->_sections['event']['iteration']++):
+$this->_sections['event']['rownum'] = $this->_sections['event']['iteration'];
+$this->_sections['event']['index_prev'] = $this->_sections['event']['index'] - $this->_sections['event']['step'];
+$this->_sections['event']['index_next'] = $this->_sections['event']['index'] + $this->_sections['event']['step'];
+$this->_sections['event']['first']      = ($this->_sections['event']['iteration'] == 1);
+$this->_sections['event']['last']       = ($this->_sections['event']['iteration'] == $this->_sections['event']['total']);
+?>
+		<td align="center"><?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']][$this->_sections['event']['index']]; ?>
+</td>
+	   <?php endfor; endif; ?>
+ 		<td align="center"><?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]['TOTAL']; ?>
+</td>
+		<td align="center"><input type="text" name="Place<?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]['ID']; ?>
+" value="<?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]['PLACE']; ?>
+" size=1></td>
+		<td align="center"><input type="text" name="Description<?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]['ID']; ?>
+" value="<?php echo $this->_tpl_vars['champs_list'][$this->_sections['competitor']['index']]['DESCRIPTION']; ?>
+" size=20></td>
+ 	 </tr>
+
+ 	 <?php endfor; endif; ?>
+ </table>
+
+<input type="submit" value="Submit" name="Submit">
+</form>
+
+
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "footer.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+</body>
+</div>

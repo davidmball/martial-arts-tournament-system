@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates
+END
+edit_user.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/edit_user.tpl
+END
+trophy.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/trophy.tpl
+END
+denied.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/denied.tpl
+END
+edit_team.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/edit_team.tpl
+END
+edit_sections.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/edit_sections.tpl
+END
+footer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/footer.tpl
+END
+results.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/results.tpl
+END
+edit_tournament.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/edit_tournament.tpl
+END
+enrolment.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/enrolment.tpl
+END
+tournament_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/tournament_settings.php
+END
+test.conf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/test.conf
+END
+admin_champion.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/admin_champion.tpl
+END
+login.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/login.tpl
+END
+logout.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/logout.tpl
+END
+admin_divisions.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/admin_divisions.tpl
+END
+help.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/help.tpl
+END
+header.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/header.tpl
+END
+admin.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/admin.tpl
+END
+edit_division.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/edit_division.tpl
+END
+edit_competitor.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/edit_competitor.tpl
+END
+contact.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/contact.tpl
+END
+admin_sections.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/admin_sections.tpl
+END
+my_account.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/my_account.tpl
+END
+division_draw.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/division_draw.tpl
+END
+admin_represents.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/admin_represents.tpl
+END
+manager_registration.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/manager_registration.tpl
+END
+index.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/index.tpl
+END
+divisions.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/divisions.tpl
+END
+admin_users.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/admin_users.tpl
+END
+registration.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/registration.tpl
+END
+html_header.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/html_header.tpl
+END
+edit_represent.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/edit_represent.tpl
+END
+admin_participation.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mats_mats/!svn/ver/1/domainname/tournament/templates/admin_participation.tpl
+END

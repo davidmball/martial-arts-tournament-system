@@ -1,0 +1,193 @@
+
+[auth]
+user_id = 129
+username = 130
+password = 130
+access = 130
+email = 130
+represents_id = 1
+title = 130
+first_name = 130
+last_name = 130
+active = 145
+last_updated = 142
+
+[auth__keys]
+user_id = N
+
+[auth_represents_connection]
+represents_id = 129
+user_id = 129
+tournament_id = 129
+
+[auth_represents_connection__keys]
+
+[competitor_events]
+competitor_id = 129
+event_id = 129
+division_id = 129
+draw_order = 129
+
+[competitor_events__keys]
+
+[competitors]
+competitor_id = 129
+tournament_id = 129
+enrolment = 130
+title = 130
+first_name = 130
+middle_name = 130
+last_name = 130
+represents_id = 129
+DOB = 134
+weight = 129
+form_weight = 129
+height = 129
+rank_id = 129
+address = 130
+phone = 130
+gender = 130
+comments = 2
+last_updated = 142
+red_card = 1
+paid_amount = 129
+competitor_count = 129
+team_competitor_id1 = 129
+team_competitor_id2 = 129
+team_competitor_id3 = 129
+team_competitor_id4 = 129
+team_competitor_id5 = 129
+team_competitor_id6 = 129
+overall_place = 129
+overall_description = 130
+received_form = 145
+
+[competitors__keys]
+competitor_id = K
+
+[competitors_seq]
+id = 129
+
+[competitors_seq__keys]
+id = N
+
+[divisions]
+division_id = 129
+name = 130
+event_id = 129
+tournament_id = 129
+rounds = 129
+round_min = 129
+break_min = 129
+minor_final = 130
+type = 130
+section_id = 129
+technique1 = 130
+technique2 = 130
+technique3 = 130
+technique4 = 130
+technique5 = 130
+sequence = 129
+
+[divisions__keys]
+division_id = K
+
+[divisions_seq]
+id = 129
+
+[divisions_seq__keys]
+id = N
+
+[events]
+event_id = 129
+name = 130
+name_abbrev = 130
+max_competitors = 129
+
+[events__keys]
+event_id = K
+
+[payment]
+payment_id = 129
+description = 130
+
+[payment__keys]
+
+[rank]
+rank_id = 129
+name = 130
+html_display = 130
+
+[rank__keys]
+rank_id = K
+name = K
+
+[represents]
+represents_id = 129
+name = 130
+active = 145
+last_updated = 142
+
+[represents__keys]
+represents_id = N
+
+[results]
+division_id = 129
+round_id = 129
+competitor_red_id = 129
+competitor_blue_id = 129
+colour_win = 130
+last_updated = 142
+user_id = 129
+technique1 = 129
+technique2 = 129
+technique3 = 129
+technique4 = 129
+technique5 = 129
+extra1 = 129
+extra2 = 129
+place = 129
+
+[results__keys]
+
+[sections]
+section_id = 129
+tournament_id = 129
+name = 130
+date = 142
+part = 129
+
+[sections__keys]
+section_id = K
+
+[sections_seq]
+id = 129
+
+[sections_seq__keys]
+id = N
+
+[tournament_events]
+tournament_id = 129
+event_id = 129
+
+[tournament_events__keys]
+
+[tournaments]
+tournament_id = 129
+name = 130
+location = 130
+date_from = 134
+date_to = 134
+allow_managers_to_edit = 145
+active = 145
+last_updated = 142
+draws_public = 129
+payment_id = 129
+due_date = 142
+schedule_html = 194
+participation_signature_html = 194
+tournament_form_pdf = 130
+logo_name = 130
+
+[tournaments__keys]
+tournament_id = N
