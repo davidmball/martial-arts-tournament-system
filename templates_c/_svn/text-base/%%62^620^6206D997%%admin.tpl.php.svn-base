@@ -1,0 +1,198 @@
+<?php /* Smarty version 2.6.20, created on 2008-10-17 19:58:17
+         compiled from admin.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('function', 'config_load', 'admin.tpl', 1, false),)), $this); ?>
+<?php echo smarty_function_config_load(array('file' => "test.conf",'section' => 'setup'), $this);?>
+
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "header.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+
+<div id="main_pane">
+
+<h1>Generate Enrolment</h1>
+
+ 	<?php unset($this->_sections['section_list']);
+$this->_sections['section_list']['name'] = 'section_list';
+$this->_sections['section_list']['loop'] = is_array($_loop=$this->_tpl_vars['sections']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['section_list']['show'] = true;
+$this->_sections['section_list']['max'] = $this->_sections['section_list']['loop'];
+$this->_sections['section_list']['step'] = 1;
+$this->_sections['section_list']['start'] = $this->_sections['section_list']['step'] > 0 ? 0 : $this->_sections['section_list']['loop']-1;
+if ($this->_sections['section_list']['show']) {
+    $this->_sections['section_list']['total'] = $this->_sections['section_list']['loop'];
+    if ($this->_sections['section_list']['total'] == 0)
+        $this->_sections['section_list']['show'] = false;
+} else
+    $this->_sections['section_list']['total'] = 0;
+if ($this->_sections['section_list']['show']):
+
+            for ($this->_sections['section_list']['index'] = $this->_sections['section_list']['start'], $this->_sections['section_list']['iteration'] = 1;
+                 $this->_sections['section_list']['iteration'] <= $this->_sections['section_list']['total'];
+                 $this->_sections['section_list']['index'] += $this->_sections['section_list']['step'], $this->_sections['section_list']['iteration']++):
+$this->_sections['section_list']['rownum'] = $this->_sections['section_list']['iteration'];
+$this->_sections['section_list']['index_prev'] = $this->_sections['section_list']['index'] - $this->_sections['section_list']['step'];
+$this->_sections['section_list']['index_next'] = $this->_sections['section_list']['index'] + $this->_sections['section_list']['step'];
+$this->_sections['section_list']['first']      = ($this->_sections['section_list']['iteration'] == 1);
+$this->_sections['section_list']['last']       = ($this->_sections['section_list']['iteration'] == $this->_sections['section_list']['total']);
+?>
+ 		<a href="enrolment.php?SECTION=<?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['ID']; ?>
+"><?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['NAME']; ?>
+</a>&nbsp;|&nbsp;
+ 	<?php endfor; endif; ?>
+
+<h1>Generate Trophy List</h1>
+
+ 	<?php unset($this->_sections['section_list']);
+$this->_sections['section_list']['name'] = 'section_list';
+$this->_sections['section_list']['loop'] = is_array($_loop=$this->_tpl_vars['sections']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['section_list']['show'] = true;
+$this->_sections['section_list']['max'] = $this->_sections['section_list']['loop'];
+$this->_sections['section_list']['step'] = 1;
+$this->_sections['section_list']['start'] = $this->_sections['section_list']['step'] > 0 ? 0 : $this->_sections['section_list']['loop']-1;
+if ($this->_sections['section_list']['show']) {
+    $this->_sections['section_list']['total'] = $this->_sections['section_list']['loop'];
+    if ($this->_sections['section_list']['total'] == 0)
+        $this->_sections['section_list']['show'] = false;
+} else
+    $this->_sections['section_list']['total'] = 0;
+if ($this->_sections['section_list']['show']):
+
+            for ($this->_sections['section_list']['index'] = $this->_sections['section_list']['start'], $this->_sections['section_list']['iteration'] = 1;
+                 $this->_sections['section_list']['iteration'] <= $this->_sections['section_list']['total'];
+                 $this->_sections['section_list']['index'] += $this->_sections['section_list']['step'], $this->_sections['section_list']['iteration']++):
+$this->_sections['section_list']['rownum'] = $this->_sections['section_list']['iteration'];
+$this->_sections['section_list']['index_prev'] = $this->_sections['section_list']['index'] - $this->_sections['section_list']['step'];
+$this->_sections['section_list']['index_next'] = $this->_sections['section_list']['index'] + $this->_sections['section_list']['step'];
+$this->_sections['section_list']['first']      = ($this->_sections['section_list']['iteration'] == 1);
+$this->_sections['section_list']['last']       = ($this->_sections['section_list']['iteration'] == $this->_sections['section_list']['total']);
+?>
+ 		<a href="trophy.php?SECTION=<?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['ID']; ?>
+"><?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['NAME']; ?>
+</a>&nbsp;|&nbsp;
+ 	<?php endfor; endif; ?>
+ 	
+<h1>Generate Results List</h1>
+
+ 	<?php unset($this->_sections['section_list']);
+$this->_sections['section_list']['name'] = 'section_list';
+$this->_sections['section_list']['loop'] = is_array($_loop=$this->_tpl_vars['sections']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['section_list']['show'] = true;
+$this->_sections['section_list']['max'] = $this->_sections['section_list']['loop'];
+$this->_sections['section_list']['step'] = 1;
+$this->_sections['section_list']['start'] = $this->_sections['section_list']['step'] > 0 ? 0 : $this->_sections['section_list']['loop']-1;
+if ($this->_sections['section_list']['show']) {
+    $this->_sections['section_list']['total'] = $this->_sections['section_list']['loop'];
+    if ($this->_sections['section_list']['total'] == 0)
+        $this->_sections['section_list']['show'] = false;
+} else
+    $this->_sections['section_list']['total'] = 0;
+if ($this->_sections['section_list']['show']):
+
+            for ($this->_sections['section_list']['index'] = $this->_sections['section_list']['start'], $this->_sections['section_list']['iteration'] = 1;
+                 $this->_sections['section_list']['iteration'] <= $this->_sections['section_list']['total'];
+                 $this->_sections['section_list']['index'] += $this->_sections['section_list']['step'], $this->_sections['section_list']['iteration']++):
+$this->_sections['section_list']['rownum'] = $this->_sections['section_list']['iteration'];
+$this->_sections['section_list']['index_prev'] = $this->_sections['section_list']['index'] - $this->_sections['section_list']['step'];
+$this->_sections['section_list']['index_next'] = $this->_sections['section_list']['index'] + $this->_sections['section_list']['step'];
+$this->_sections['section_list']['first']      = ($this->_sections['section_list']['iteration'] == 1);
+$this->_sections['section_list']['last']       = ($this->_sections['section_list']['iteration'] == $this->_sections['section_list']['total']);
+?>
+ 		<a href="results.php?SECTION=<?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['ID']; ?>
+"><?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['NAME']; ?>
+</a>&nbsp;|&nbsp;
+ 	<?php endfor; endif; ?> 	
+
+<h1>Generate Division List</h1>
+
+	BRIEF ::
+ 	<?php unset($this->_sections['section_list']);
+$this->_sections['section_list']['name'] = 'section_list';
+$this->_sections['section_list']['loop'] = is_array($_loop=$this->_tpl_vars['sections']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['section_list']['show'] = true;
+$this->_sections['section_list']['max'] = $this->_sections['section_list']['loop'];
+$this->_sections['section_list']['step'] = 1;
+$this->_sections['section_list']['start'] = $this->_sections['section_list']['step'] > 0 ? 0 : $this->_sections['section_list']['loop']-1;
+if ($this->_sections['section_list']['show']) {
+    $this->_sections['section_list']['total'] = $this->_sections['section_list']['loop'];
+    if ($this->_sections['section_list']['total'] == 0)
+        $this->_sections['section_list']['show'] = false;
+} else
+    $this->_sections['section_list']['total'] = 0;
+if ($this->_sections['section_list']['show']):
+
+            for ($this->_sections['section_list']['index'] = $this->_sections['section_list']['start'], $this->_sections['section_list']['iteration'] = 1;
+                 $this->_sections['section_list']['iteration'] <= $this->_sections['section_list']['total'];
+                 $this->_sections['section_list']['index'] += $this->_sections['section_list']['step'], $this->_sections['section_list']['iteration']++):
+$this->_sections['section_list']['rownum'] = $this->_sections['section_list']['iteration'];
+$this->_sections['section_list']['index_prev'] = $this->_sections['section_list']['index'] - $this->_sections['section_list']['step'];
+$this->_sections['section_list']['index_next'] = $this->_sections['section_list']['index'] + $this->_sections['section_list']['step'];
+$this->_sections['section_list']['first']      = ($this->_sections['section_list']['iteration'] == 1);
+$this->_sections['section_list']['last']       = ($this->_sections['section_list']['iteration'] == $this->_sections['section_list']['total']);
+?>
+ 		<a href="divisions.php?SECTION=<?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['ID']; ?>
+&TYPE=BRIEF"><?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['NAME']; ?>
+</a>&nbsp;|&nbsp;
+ 	<?php endfor; endif; ?>
+ 	
+ 	<br>
+ 	
+ 	DETAILED ::
+ 	 <?php unset($this->_sections['section_list']);
+$this->_sections['section_list']['name'] = 'section_list';
+$this->_sections['section_list']['loop'] = is_array($_loop=$this->_tpl_vars['sections']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
+$this->_sections['section_list']['show'] = true;
+$this->_sections['section_list']['max'] = $this->_sections['section_list']['loop'];
+$this->_sections['section_list']['step'] = 1;
+$this->_sections['section_list']['start'] = $this->_sections['section_list']['step'] > 0 ? 0 : $this->_sections['section_list']['loop']-1;
+if ($this->_sections['section_list']['show']) {
+    $this->_sections['section_list']['total'] = $this->_sections['section_list']['loop'];
+    if ($this->_sections['section_list']['total'] == 0)
+        $this->_sections['section_list']['show'] = false;
+} else
+    $this->_sections['section_list']['total'] = 0;
+if ($this->_sections['section_list']['show']):
+
+            for ($this->_sections['section_list']['index'] = $this->_sections['section_list']['start'], $this->_sections['section_list']['iteration'] = 1;
+                 $this->_sections['section_list']['iteration'] <= $this->_sections['section_list']['total'];
+                 $this->_sections['section_list']['index'] += $this->_sections['section_list']['step'], $this->_sections['section_list']['iteration']++):
+$this->_sections['section_list']['rownum'] = $this->_sections['section_list']['iteration'];
+$this->_sections['section_list']['index_prev'] = $this->_sections['section_list']['index'] - $this->_sections['section_list']['step'];
+$this->_sections['section_list']['index_next'] = $this->_sections['section_list']['index'] + $this->_sections['section_list']['step'];
+$this->_sections['section_list']['first']      = ($this->_sections['section_list']['iteration'] == 1);
+$this->_sections['section_list']['last']       = ($this->_sections['section_list']['iteration'] == $this->_sections['section_list']['total']);
+?>
+ 		<a href="divisions.php?SECTION=<?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['ID']; ?>
+&TYPE=DETAILED"><?php echo $this->_tpl_vars['sections'][$this->_sections['section_list']['index']]['NAME']; ?>
+</a>&nbsp;|&nbsp;
+ 	<?php endfor; endif; ?>
+ 	
+<h1>Division Management</h1>
+<a href="admin_divisions.php">Division Management</a> 
+
+<h1>Represents Management</h1>
+<a href="admin_represents.php">Represents Management</a> 
+
+<h1>User Management</h1>
+<a href="admin_users.php">Users Management</a> 
+
+<h1>Section Management</h1>
+<a href="admin_sections.php">Sections Management</a> 
+
+<h1>Champion Management</h1>
+<a href="admin_champion.php?GENDER=All">Overall Champion Management - All</a><br> 
+<a href="admin_champion.php?GENDER=Male">Overall Champion Management - Male</a><br> 
+<a href="admin_champion.php?GENDER=Female">Overall Champion Management - Female</a> 
+
+<h1>Participation Certificates</h1>
+<a href="admin_participation.php">Generate participation certificates</a><br>
+
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "footer.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+</body>
+</div>

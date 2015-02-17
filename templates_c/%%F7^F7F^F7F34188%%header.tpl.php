@@ -1,0 +1,39 @@
+<?php /* Smarty version 2.6.20, created on 2015-02-17 22:23:11
+         compiled from header.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'header.tpl', 8, false),)), $this); ?>
+<div id="content">
+
+	<div id="header_pane">
+		<table border="0" class="head" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td>
+					<h1>Martial Arts Tournament System</h1>
+					<div id="copyright">&#169; 2007-2015 David Ball and Ruth Schulz. Available from <a href=http://code.google.com/p/martial-arts-tournament-system/>google code</a> under the GNU GPL license. Page Generated: <?php echo ((is_array($_tmp=time())) ? $this->_run_mod_handler('date_format', true, $_tmp, $this->_tpl_vars['date_time']) : smarty_modifier_date_format($_tmp, $this->_tpl_vars['date_time'])); ?>
+</div>
+				</td>
+		
+				<form action="<?php echo $this->_tpl_vars['SCRIPT_NAME']; ?>
+" method="post" enctype="multipart/form-data">
+		
+				<div id="menu_pane">
+		
+				<td class="head_menu">	
+				
+						 <a <?php if ($this->_tpl_vars['current_menu'] == 'Main'): ?> style="background-color: #fff;" <?php endif; ?> href="index.php">&nbsp;Main&nbsp;</a>
+						|<a <?php if ($this->_tpl_vars['current_menu'] == 'Registration'): ?> style="background-color: #fff;" <?php endif; ?> href="registration.php">&nbsp;Registration&nbsp;</a>
+						|<a <?php if ($this->_tpl_vars['current_menu'] == 'Divisions'): ?> style="background-color: #fff;" <?php endif; ?> href="divisions.php">&nbsp;Divisions&nbsp;</a>
+						|<a <?php if ($this->_tpl_vars['current_menu'] == 'Results'): ?> style="background-color: #fff;" <?php endif; ?> href="results.php">&nbsp;Results&nbsp;</a>
+						|<a <?php if ($this->_tpl_vars['current_menu'] == 'Contact'): ?> style="background-color: #fff;" <?php endif; ?> href="contact.php">&nbsp;Contact&nbsp;</a>
+						|<a <?php if ($this->_tpl_vars['current_menu'] == 'Help'): ?> style="background-color: #fff;" <?php endif; ?> href="help.php">&nbsp;Help&nbsp;</a>
+						<?php if ($this->_tpl_vars['user_access'] == 'admin'): ?>
+						 |<a <?php if ($this->_tpl_vars['current_menu'] == 'Admin'): ?> style="background-color: #fff;" <?php endif; ?> href="admin.php">&nbsp;Admin&nbsp;</a>
+						<?php endif; ?>
+
+					</form>
+				</td>
+				</div>		
+			</tr>
+		</table>	
+
+</div>
