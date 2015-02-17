@@ -25,7 +25,7 @@ require_once('Auth/Auth.php');
 
 // the session is only used to determine caching
 session_start();
-session_register("cache_username");
+//session_register("cache_username");
 
 
 function loginFunction($username = null, $status = null, &$auth = null)
